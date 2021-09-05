@@ -1,16 +1,14 @@
-variable "credentials" {
-  default   = ""
-  sensitive = true
+variable "gcp_project_id" {
+  description = "The name of the GCP Project where all resources will be launched."
+  type        = string
 }
 
-variable "project" {
-  default = ""
+variable "gcp_region" {
+  description = "The region in which all GCP resources will be launched."
+  type        = string
 }
 
-variable "region" {
-  default = "asia-southeast2"
-}
-
-variable "zone" {
-  default = "asia-southeast2-b"
+variable "gcp_zone" {
+  description = "The zone in which all GCP resources will be launched."
+  type        = string
 }
